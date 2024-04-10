@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-color: antiquewhite;
+      box-sizing: border-box;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 650px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 20px;
+      margin-bottom: 35px;
+    }
+
+    .sub-container{
+      background: white;
+      margin: 15px;
+    }
+
+    .sub-container > h1 {
+      font-size: 50px;
+    }
+
+    .sub-container > p {
+      margin-bottom: 25px;
+      color: rgba(0, 0, 0, 0.738);
+    }
+
+    .images{
+      margin: 5px;
+      border-radius: 15px;
+    }
+
+    .Preparation-container{
+      background-color: rgba(133, 5, 253, 0.048);
+      border-radius: 15px;
+      padding: 5px 10px;
+    }
+
+    .Preparation-container > h3{
+      color: rgb(130, 7, 104);
+    }
+
+    .Preparation-container > ul > li{
+      margin-bottom: 10px;
+    }
+
+    .Preparation-span{
+      color: rgba(0, 0, 0, 0.738);
+      font-weight: 800;
+      margin-left: 10px;
+    }
+
+    .Ingredients-container > h2{
+      color: rgb(130, 7, 104);
+    }
+
+    .Ingredients-container > ul {
+      color: rgb(130, 7, 104);
+    }
+
+    .Ingredients-container > ul > li {
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+
+    .Ingredients-container > ul > li > span{
+      color: rgba(0, 0, 0, 0.738);
+      margin-left: 10px;
+    }
+
+    .Instructions-container > h2{
+      color: rgb(130, 7, 104);
+    }
+
+    .Instructions-container > ol {
+      color: rgb(130, 7, 104);
+    }
+
+    .Instructions-container > ol > li {
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+
+    .Instructions-container > ol > li > p {
+      color: rgba(0, 0, 0, 0.738);
+      margin-left: 10px;
+    }
+
+    .Instructions-container > ol > li > p > span{
+      color: rgba(0, 0, 0, 0.645);
+      font-weight: 800; 
+    }
+
+    .Nutrition-container > h2 {
+      color: rgb(130, 7, 104);
+    }
+
+    .Nutrition-container > div{
+      padding: 0px 50px;
+    }
+
+    .Nutrition-container > div > div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.738);
+    }
+
+    .Nutrition-container > div > div > span {
+      color: rgb(130, 7, 104);
+      font-weight: 700;
+    }
+
+
+    @media screen and (min-width: 365px){
+      .images{
+        height: 200px;
+      }
+    }
+
+    @media screen and (min-width: 765px){
+      .images{
+        height: 300px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <section class="main-container">
+    <div class="container ">
+      <div class="sub-container">
+        <img class="images" src="./assets//images/image-omelette.jpeg" width="100%" height="150px"/>
+        <h1>Simple Omelette Recipe</h1>
+        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p> 
+        <div class="Preparation-container">
+          <h2> Preparation time</h2>
+          <ul>
+            <li><span class="Preparation-span">Total:</span> Approximately 10 minutes</li>
+            <li><span class="Preparation-span">Preparation:</span> 5 minutes</li>
+            <li><span class="Preparation-span">Cooking:</span> 5 minutes</li>
+          </ul>
+        </div>
+        <div class="Ingredients-container">
+          <h2>Ingredients</h2>
+          <ul>
+            <li><span> 2-3 large eggs</span></li>
+            <li><span>Salt, to taste</span></li>
+            <li><span>Pepper, to taste</span></li>
+            <li><span>1 tablespoon of butter or oil</span></li>
+            <li><span>Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
+          </ul>
+        </div>
+        <hr/>
+        <div class="Instructions-container">
+          <h2>Instructions</h2>
+          <ol>
+            <li><p> <span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+              You can add a tablespoon of water or milk for a fluffier texture.</p></li>
+            <li><p><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</p></li>
+            <li><p>  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+              the eggs evenly coat the surface.</p></li>
+            <li><p><span>Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
+              middle, sprinkle your chosen fillings over one half of the omelette.</p></li>
+            <li><p> <span>Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+              fillings. Let it cook for another minute, then slide it onto a plate.</p></li>
+            <li><p> <span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.</p></li>
+          </ol>
+        </div>
+        <hr/>
+        <div class="Nutrition-container">
+          <h2>Nutrition</h2>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <div>
+            <div><p> Calories</p><span>277kcal</span></div>
+            <hr/>
+            <div><p>Carbs</p><span>0g</span></div>
+            <hr/>
+            <div><p>Protein</p><span>20g</span></div>
+            <hr/>
+            <div><p>Fat</p><span>22g</span></div>
+            <hr/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Madanraj P</a>.
+  </div>
+</body>
+</html>
