@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: aliceblue; font-size: medium; margin-top: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      box-sizing: border-box;
+      background: black;
+    }
+
+    .main-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 80px;
+      align-items: center;
+      width: 400px;
+      border-radius: 15px;
+      background-color: rgb(34, 34, 34);
+    }
+
+    .sub-container{
+      width: 100%;
+      margin: 25px 0px;
+    } 
+    
+    .user-profile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .user-profile > img{
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+
+    .user-profile > h2, span{
+      color: aliceblue;
+    }
+
+    .user-profile > p{
+      color: chartreuse;
+    }
+
+    .user-name{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      padding: 0px 40px;
+    }
+
+    .icons{
+      background-color: rgba(55, 55, 55, 0.618);
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .icons > a {
+      font-size: large;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: aliceblue;
+    }
+
+    .icons:focus {
+      background-color: chartreuse;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="main-container">
+    <section class="container">
+      <div class="sub-container">
+        <div class="user-profile">
+          <img src="./assets//images/avatar-jessica.jpeg" />
+          <h2>Jessica Randall</h2>
+          <span>London, United Kingdom</span>
+          <p>"Front-end developer and avid reader."</p>
+        </div>
+        <div class="user-name">
+            <button class="icons">
+              <a>GitHub</a>
+            </button>
+            <button class="icons">
+              <a>Frontend Mentor</a>
+            </button>
+            <button class="icons">
+              <a>LinkedIn</a>
+            </button>
+            <button class="icons">
+              <a>Twitter</a>
+            </button>
+            <button class="icons">
+              <a>Instagram</a>
+            </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Madanraj0519" target="_blank">Madanraj P</a>.
+  </footer>
+</body>
+</html>
