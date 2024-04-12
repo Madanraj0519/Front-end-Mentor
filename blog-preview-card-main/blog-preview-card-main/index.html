@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px; font-size: large; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      /* margin: 0; */
+      box-sizing: border-box;
+      background: rgba(245, 217, 78, 0.908);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 344px;
+      background-color: aliceblue;
+      margin-top: 100px;
+      border-radius: 20px;
+      box-shadow: 8px 8px;
+    }
+
+    .sub-container{
+      width: 100%;
+      margin: 10px 0px;
+      padding: 0px 20px;
+    }
+
+    .sub-container > img {
+      border-radius: 25px;
+      width: 100%;
+      height: 200px;
+    }
+
+    .sub-container > h5{
+      background: rgba(245, 217, 78, 0.908);
+      width: 82px;
+      padding: 3px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .sub-container > h3 {
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .sub-container > h3:active {
+      color: rgba(245, 217, 78, 0.908);
+    }
+
+    .sub-container > p {
+      color: rgba(26, 26, 26, 0.674);
+    }
+
+    .sub-container > div {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sub-container > div > img{
+      width: 30px;
+    }
+
+    .sub-container > div > h5 {
+      font-weight: 700px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <main class="main-container">
+    <section class="container">
+      <div class="sub-container">
+        <img src="./assets/images/illustration-article.svg" alt="banner" />
+        <h5>Learning</h5>
+        <span>Published 21 Dec 2023</span>
+        <h3>HTML & CSS foundations</h3>
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <div>
+          <img src="./assets/images/image-avatar.webp" alt="user-profile" />
+          <h5>Greg Hooper </h5>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Madanraj0519">Madanraj</a>.
+  </footer>
+</body>
+</html>
