@@ -1,5 +1,7 @@
 # Frontend Mentor - Blog preview card
 
+My Live link : ( https://blog-preview-card-gules.vercel.app/ )
+
 ![Design preview for the Blog preview card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
